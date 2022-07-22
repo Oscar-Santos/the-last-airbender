@@ -1,0 +1,8 @@
+<h1>LIST OF MEMBERS BY NATION</h1>
+
+<% @members.each do |member| %>
+<h3>NAME: <%= member.name %></h3>
+<h3>ALLIES: <%= member.allies %></h3>
+<h3>ENEMIES: <%= member.enemies %></h3>
+<h3>AFFILIATION: <%= member.affiliation %></h3>
+<% end %>
