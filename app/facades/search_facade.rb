@@ -6,4 +6,8 @@ class SearchFacade
       Member.new(member)
     end
   end
+
+  def self.count_members(nation)
+    SearchService.get_all_members(nation).count
+  end
 end
